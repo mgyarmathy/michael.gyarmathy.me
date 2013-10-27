@@ -10,7 +10,7 @@ A&amp;M University, Freelance Web Developer">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/less" href="css/style.less">
 <link rel="stylesheet" type="text/less" href="css/resume-print.less" media="print">
-<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
 <script src="js/less-1.4.1.min.js" type="text/javascript"></script>
 <script src="https://www.google.com/jsapi" type="text/javascript"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
@@ -22,7 +22,7 @@ A&amp;M University, Freelance Web Developer">
 
 <body>
 <nav>
-    <div class="nav-toggle" style="text-align:right; padding-right: 30px;"><i class="icon-double-angle-down"></i></div>
+    <div class="nav-toggle" style="text-align:right; padding-right: 30px;"><i class="fa fa-angle-double-down"></i></div>
     <ul class="nav-links hidden">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
@@ -32,11 +32,11 @@ A&amp;M University, Freelance Web Developer">
     </ul>
 </nav>
 
-<div id="menu"><i class="icon-double-angle-down"></i>
+<div id="menu"><i class="fa fa-reorder"></i>
     <ul class="nav-links hidden">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
-    <li>Freelance</li>
+    <!--<li>Freelance</li>-->
     <li><a href="#resume">Resume</a></li>
     <li><a href="#articles">Articles</a></li>
     </ul>
@@ -51,34 +51,63 @@ A&amp;M University, Freelance Web Developer">
 
     <div id="content">
 
-    <div id="home" class="page" style="display:none; text-align:left;" data-back="img/0015.jpg">
+    <div id="home" class="page" style="display:none; text-align:left;" data-back="img/scan-0017-blur.jpg">
       <div class="avatar">
         <img src="http://www.gravatar.com/avatar/82d957e8e1516b086edac0764da0a117?s=200" />
       </div>
     <h1>Howdy. I'm Michael.</h1>
-    <h1>I'm a <a href="#">student</a> at Texas A&amp;M.</h1>
-    <h1>I'm a <a href="#">freelance web developer</a>.</h1>
+    <h1>I'm a <a href="#about">student at Texas A&amp;M</a>.</h1>
+    <h1>I'm a <a href="#about">freelance web developer</a>.</h1>
     <h1>I'm an <a href="#articles">aspiring writer</a>.</h1>
     <h1>What can I do for you?</h1>
-    </br>
+    <br>
     <h2>I'm currently seeking an internship in User Experience and Software Development for Summer 2014.</h2>
     <h2>You can find my resume <a class="page-link" href="#resume">here</a>.</h2>
-    </br>
-    <p><i class="icon-wrench"></i> This site is under heavy-construction, so bear with me! </p>
     </div>
     
-    <div id="about" class="page" style="display:none;" data-back="img/0003.jpg">
+    <div id="about" class="page" style="display:none;" data-back="img/scan-0012.jpg">
         <h1>About</h1>
-        <p><i class="icon-wrench"></i> This site is under heavy-construction, so bear with me! </p>
-        <p>Lorem ipsum sit dor amet blah blah.</p>
-        <h2>Core Values</h2>
+        <br>
+        <h2>Introduction</h2>
+        <p>Howdy! My name is Michael Gyarmathy. I'm a Junior Computer Science major at Texas A&amp;M University.
+        I have a passion for User Experience and Software/Web Development. I'm also a big fan of photography, writing,
+        music, distance running, and breakfast for dinner.</p> 
+        <br>
+        <p>I've created this site to showcase some of my work. I'm currently <strong>open</strong> for Freelance Web
+        Development work. If you're interested in working with me, or hiring me for a project, please fill out the 
+        contact form below!</p>
+        <br>
+        <h2>What I'm About</h2>
         <ul>
-        <li></li>
+        <li><strong>Sincerity</strong> -- I believe that a man's word is one of his most valuable possessions. Let your
+        'yes' be yes, and your 'no' be no. When I say something, I'm going to follow through with it.</li>
+        <li><strong>Excellence</strong> -- I care a lot about the work I do. I strive to follow coding standards and best practices, especially
+        when writing code for others. Everyone deserves to have clean, well-documented code.</li>
+        <li><strong>Relationships</strong> -- People are more valuable than we often make them to be. I think we are all
+        more likely to perform our best when we feel cherished and respected by the people around us.</li>
         </ul>
+        <br>
+        <h2>Contact</h2>
+        <p>Questions or comments? Let me know!</p>
+        <form action="" method="post" class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" />
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="4"></textarea>
+            <input type="button" value="Send"/><div id="success" style="color:#003399;"></div>
+        </form>
+        <br>You can also follow me on Twitter: <a href="https://twitter.com/mgyarmathy_">@mgyarmathy_</a></p>
+        <br>
         <h2>About the Site</h2>
+        <p>This entire site was hand-coded by myself, taking advantage of a few JS libraries and jQuery 
+        plugins written by some talented individuals. If you're interested in seeing how I put it all together, 
+        you can view the code on <a href="https://github.com/mgyarmathy/michael.gyarmathy.me">Github</a>. 
+        Feel free to fork my repository and tweak it for your own personal use.</p>
     </div>
     
-    <div id="freelance" class="page" style="display:none;" data-back="img/0001.jpg">
+    <!--<div id="freelance" class="page" style="display:none;" data-back="img/0001.jpg">
     
         <h1>Freelance Web Development</h1>
         <p> <i class="icon-wrench"></i> This site is under heavy-construction, so bear with me! </p>
@@ -87,29 +116,26 @@ A&amp;M University, Freelance Web Developer">
           <li>Texas A&amp;M University - Aggies Commit</li>
         </ul>
         <h2>Contact</h2>
-        <style>
-        #contact-form input[type="text"], #contact-form textarea{ border: none;}
-        </style>
-        <form action="" method="post" id="contact-form">
-            <label for="name">Name:</label><br />
-            <input type="text" name="name" id="name" /><br />
-            <label for="email">Email:</label><br />
-            <input type="text" name="email" id="email" /><br />
-            <label for="message">Message:</label><br />
-            <textarea name="message" id="message"></textarea><br />
+        <form action="" method="post" class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" />
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
             <input type="button" value="send" id="contact-submit" /><div id="success" style="color:red;"></div>
         </form>
-    </div>
+    </div> -->
    
-    <div id="resume" class="page" style="display:none;" data-back="img/0012.jpg">
-        <button class="print hide-mobile" onclick="window.location = 'MichaelGyarmathy-Resume.pdf'; return false;" ><i class="icon-print"></i></button>
-        </br>
+    <div id="resume" class="page" style="display:none;" data-back="img/0001.jpg">
+        <button class="print hide-mobile" onclick="window.location = 'MichaelGyarmathy-Resume.pdf'; return false;" ><i class="fa fa-print"></i></button>
+        <br>
         <div class="resume-markdown"></div>
         <div class="resume-more">Want to know more about me? Visit http://michael.gyarmathy.me.</div>
-        <div class="show-mobile" style="text-align:center;"><h2>Click The Icon Below To Download My Resume:</h2><a href="MichaelGyarmathy-Resume.pdf"><i class="icon-file-text-alt" style="font-size:72px;"></i></a></div>
+        <div class="show-mobile" style="text-align:center;"><h2>Click The Icon Below To Download My Resume:</h2><a href="MichaelGyarmathy-Resume.pdf"><i class="fa fa-file-text-o" style="font-size:72px;"></i></a></div>
     </div>
 
-    <div id="articles" class="page" style="display:none;" data-back="img/0001.jpg">
+    <div id="articles" class="page" style="display:none;" data-back="img/scan-0004-blur.jpg">
         <h1>Latest Articles</h2>
         <div class="articles-list"></div>
         <p style="font-size:16px;">For more articles, visit me on <a href="https://medium.com/@mgyarmathy_/latest">Medium</a>.</p>
@@ -117,6 +143,6 @@ A&amp;M University, Freelance Web Developer">
     
     </div>
 </div>
-<div class="clear"></br></div>
+<div class="clear"><br></div>
 </body>
 </html>

@@ -42,19 +42,18 @@ $(document).ready(function(){
     
     $('.nav-toggle').click(function() {
         $('.nav-links').slideToggle();
-        $(this).find('i').eq(0).toggleClass('icon-double-angle-down icon-double-angle-up');
+        $(this).find('i').eq(0).toggleClass('fa-angle-double-down fa-angle-double-up');
     });
     
-    $('#contact-form').click(function() {             
-        $.post("email.php", $("#contact-form").serialize(), function(response) {
+    $('.contact-form input[type="button"]').click(function() {  
+        $.post("email.php", $(this).parent().serialize(), function(response) {
             $('#success').html(response);
         });
         return false;
     });
     
     $('#menu i').click(function() {
-        $('#menu .nav-links').slideToggle('slow');
-        $(this).toggleClass('icon-double-angle-up icon-double-angle-down');
+        $('#menu .nav-links').toggle('slow');
     });
     
     $(window).hashchange(function(){

@@ -10,8 +10,8 @@ $message = 'FROM: ' . $name . "\r\n" . 'Email: ' . $email . "\r\n\r\n" . $messag
 $headers = 'From: ' . $email . "\r\n";
  
 if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    echo "Thanks for your message! I will get back to you shortly!";
     mail($to, $subject, $message, $headers);
-    echo "Your email was sent!";
 }
 else {
     echo "Invalid Email, please provide an correct email.";
